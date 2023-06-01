@@ -8,7 +8,8 @@ namespace eportafolio.Controllers
 {
     public class PortafolioController : Controller
     {
-        public ActionResult Portafolio()
+        //GET: Portafolio
+        public ActionResult Index()
         {
             return View();
         }
