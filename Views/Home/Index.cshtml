@@ -1,20 +1,19 @@
 ﻿@{
     Layout = "~/Views/Shared/_LayoutCliente.cshtml";
 }
-<section class="container">
+<section class="container" style="padding-top:20px;">
     <div class="row text-center p-2">
         <div class="col">
-            <img class="img-fluid" width="90" height="110" align="middle"
-                 src="~/Figmaimg/mifoto1.jpg" /> <p></p>
+            <h3> Hola, soy Abril Saucedo </h3>
+            <em> Música, fotógrafa y amante de la naturaleza</em>
+            <p></p>
+            <a class="btn btn-secondary"
+               href="@Url.Action("Index","Portafolio")">Ver portafolio</a><p></p>
         </div>
-        <div class="container">
-            <div class="col">
-                <p style="color: darkorange; font:verdana; font-size:30px"> Hola, soy Abril Saucedo</p>
-                <em> Música, fotógrafa y amante de la naturaleza</em>
-                <p></p>
-                <a class="btn btn-secondary"
-                   href="@Url.Action("Index","Portafolio")">Ver portafolio</a><p></p>
-            </div>
+        <div class="col">
+            <img class="img-fluid"
+                 width="100" height="120" align="middle"
+                 src="~/Figmaimg/mifoto1.jpg" />
         </div>
     </div>
 </section>
