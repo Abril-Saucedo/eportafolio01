@@ -18,17 +18,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="@Url.Action("Index","Home")">Inicio</a>
+                        <a class="nav-link active"
+                           href="@Url.Action("Index", "Home")">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Index","Portafolio")">Portafolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("About","Home")">Acerca de mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Contact","Home")">Contacto</a>
-                    </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Portafolio")">Portafolio</a>
+                </li>
+                    }
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("About", "Home")">Acerca de mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Contact", "Home")">Contacto</a>
+                </li>
                 </ul>
             </div>
         </div>
